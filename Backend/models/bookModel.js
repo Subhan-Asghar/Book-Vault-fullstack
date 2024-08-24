@@ -1,19 +1,23 @@
 const mongoose = require('mongoose');
 
  const userSchema=new mongoose.Schema({
-    email:{
+    title:{
         type:String,
-        unique:true,
-        index:true,
         required:true
     },
 
-    password:{
+    author:{
         type:String,
         required:true
-
+    },
+    description:{
+        type:String,   
+    },
+    year:{
+        type:String,
+        required:true
     }
   })
-  const users =mongoose.model('users',userSchema)
+  const book =mongoose.model('book',userSchema)
   
-  module.exports =users
+  module.exports =book
