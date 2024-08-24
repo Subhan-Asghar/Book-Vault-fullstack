@@ -45,7 +45,7 @@ const Bookupdate = () => {
       className="text-emerald-700 font-semibold text-2xl mb-8 text-center"
       style={{ fontFamily: "'Merriweather', serif" }}
     >
-      Add Book Details
+      Update Book
     </h4>
     <form className="space-y-6">
       <div className="flex flex-col space-y-4">
